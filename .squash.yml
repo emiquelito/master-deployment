@@ -11,6 +11,7 @@ deployments:
     vm_storage_gb: 10
     ready_wait: 120
     filename: ./stuff/Dockerfile
+    context_path: ./stuff
     dockerfileonly: true
     depends_on_match_branch: true
     depends_on:
