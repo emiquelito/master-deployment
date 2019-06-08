@@ -6,7 +6,7 @@ deployments:
     depends_on_match_branch: true
     depends_on:
       - child-deployment
-  multi_dependencies:
+  multiDependencies:
     vm_size: 1
     vm_storage_gb: 10
     ready_wait: 120
