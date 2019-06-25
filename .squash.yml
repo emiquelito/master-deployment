@@ -1,10 +1,4 @@
 deployments:
-  default:
-    vm_size: 1G
-    vm_storage_gb: 10G
-    ready_wait: 120
-    depends_on:
-      - child-deployment
   multiDependencies:
     vm_size: 1
     vm_storage_gb: 10
@@ -13,5 +7,4 @@ deployments:
     context_path: ./stuff
     dockerfileonly: true
     depends_on:
-      - child-deployment
-      - child-deploymentB
+      - child-deployment:branchDependency
