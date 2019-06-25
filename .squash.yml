@@ -6,6 +6,5 @@ deployments:
     filename: ./stuff/Dockerfile
     context_path: ./stuff
     dockerfileonly: true
-    depends_on_match_branch: true
     depends_on:
       - child-deployment
