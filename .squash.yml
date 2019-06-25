@@ -14,4 +14,3 @@ deployments:
     dockerfileonly: true
     depends_on:
       - child-deployment
-      - child-deploymentB
