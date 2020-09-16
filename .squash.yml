@@ -6,3 +6,6 @@ deployments:
     depends_on:
       - CMS_SERVER:
             app: child-deployment
+            envs:
+              - TEST_VAL=42
+              - CLIENT_API_ID=7612
