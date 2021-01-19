@@ -5,4 +5,4 @@ deployments:
     ready_wait: 120
     depends_on:
       - CMS_SERVER:
-            app: child-deployment
+            app: child-deployment/[child_env]
