@@ -1,10 +1,11 @@
 deployments:
   default:
-    vm_size: 1
-    vm_storage_gb: 10
     ready_wait: 120
     filename: ./stuff/Dockerfile
     context_path: ./stuff
     dockerfileonly: true
     depends_on:
-      - child-deployment/[dev]
+      - PRODUCTS_API:
+          app: child-deployment/[dev]
+      
+      
