@@ -7,4 +7,4 @@ deployments:
     context_path: ./stuff
     dockerfileonly: true
     depends_on:
-      - child-deployment
+      - child-deployment/[dev]
